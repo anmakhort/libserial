@@ -53,7 +53,7 @@ $(TEST_OBJECTS): $(TEST_SOURCES)
 	@echo "\033[32m  ✔ \033[0m\033[1;33m" $< "\033[0m->\033[1;36m" $@ "\033[0m"
 
 distclean:
-	@$(RM) $(TARGET_LIB) *.so.1* *.a
+	@$(RM) $(TEST_TARGET) *.so.1* *.a
 
 objclean:
 	@$(RM) $(OBJECTS) $(TEST_OBJECTS)
